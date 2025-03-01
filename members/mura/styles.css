@@ -3,6 +3,8 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
+    align-items: center;
+
 }
 
 .tab-container {
@@ -65,23 +67,23 @@ body {
     border-radius: 10px;
 }
 
-.itch {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px auto; /* Centers it */
-    border-radius: 10px; /* Makes it rounded */
-    overflow: hidden; /* Ensures border-radius applies */
-    flex-direction: column;
-    
+.artworks {
+    column-count: 2; /* Two columns */
+    column-gap: 10px; /* Adjust the space between columns */
+    max-width: 600px; /* Adjust as needed */
+    margin: auto;
 }
-iframe {
-    border-radius: 10px; /* Rounded corners */
-    width: 100%;
-    opacity: 0;
-    transform: translateY(10px);
-    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+
+.artworks img {
+    width: 100%; /* Makes images take full width of the column */
+    margin-bottom: 10px; /* Adds spacing between images */
+    border-radius: 10px; /* Optional, for rounded corners */
+    display: block; /* Ensures images respect column structure */
+}
+
+
+img {
+    border-radius: 10px;
 }
 
 .fade-in {
@@ -106,21 +108,44 @@ iframe {
     margin: 20px auto;
     gap: 40px;
 }
+
+.info-cont{
+    width: 80%;
+    max-width: 800px;
+    align-items: flex-start;
+    
+    margin: 50px auto;
+}
+.info-box {
+    background: #16213e;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    border: 2px solid #e94560;
+
+    
+}
+
 .box {
     gap: 20px;
     background: rgb(122, 122, 122);
     padding: 20px;
     border-radius: 10px;
     text-align: left;
-    text-indent: 20px;
 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-blend-mode: multiply;
 }
-.starlet {
-    background-image: url(pic/starlet.png);
+.twit {
+    background-image: url(pic/twittor.jpg);
+}
+.insta {
+    background-image: url(pic/insta.jpg);
+}
+.yt {
+    background-image: url(pic/youtube.jpg);
 }
 .button {
     display: inline-block;
@@ -137,14 +162,23 @@ iframe {
 .button:hover {
     transform: scale(1.01);
 }
-.image {
-    max-width: 30%;
+.image{
+    max-width: 50%; /* Ensures it never exceeds the container */
+    width: 100vw;
     object-fit: contain;
-    background-position: center;
-    float: left;
     border-radius: 10px;
 }
 
-.box h1, .box p {
+.box h1{
     line-height: 0.5; /* Adjust as needed */
+}
+.box p {
+    line-height: 1; /* Adjust as needed */
+}
+
+p {
+    color: #f9f9f9;
+}
+h2 {
+    color: #f9f9f9;
 }

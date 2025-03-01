@@ -132,7 +132,6 @@ img {
     padding: 20px;
     border-radius: 10px;
     text-align: left;
-    text-indent: 20px;
 
     background-size: cover;
     background-position: center;
@@ -167,8 +166,11 @@ img {
     border-radius: 10px;
 }
 
-.box h1, .box p {
+.box h1{
     line-height: 0.5; /* Adjust as needed */
+}
+.box p {
+    line-height: 1; /* Adjust as needed */
 }
 
 p {
