@@ -31,20 +31,32 @@ body {
 
 .box {
     gap: 20px;
-    background: #16213e;
+    background: rgb(122, 122, 122);
     padding: 20px;
     border-radius: 10px;
     text-align: left;
-    border: 2px solid #e94560;
     text-indent: 20px;
-}
 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+}
+.faz {
+    background-image: url(pic/kich.png);
+}
+.ray {
+    background-image: url(pic/ray.png);
+}
+.zan {
+    background-image: url(pic/zan.png);
+}
 .button {
     display: inline-block;
     margin-top: 10px;
     padding: 10px 15px;
-    background: #e94560;
-    color: white;
+    background: #f9f9f9;
+    color: black;
     text-decoration: none;
     border-radius: 5px;
     transition: transform 0.2s ease;

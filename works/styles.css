@@ -108,11 +108,19 @@ iframe {
 }
 .box {
     gap: 20px;
-    background: #e94560;
+    background: rgb(122, 122, 122);
     padding: 20px;
     border-radius: 10px;
     text-align: left;
     text-indent: 20px;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+}
+.starlet {
+    background-image: url(pic/starlet.png);
 }
 .button {
     display: inline-block;
