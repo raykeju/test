@@ -41,6 +41,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-blend-mode: multiply;
+    border: 2px solid #e94560;
 }
 .faz {
     background-image: url(pic/kich.png);
@@ -75,10 +76,10 @@ body {
     transform: scale(1.01);
 }
 
-p {
+p, h2 {
     color: #f9f9f9;
 }
 
-h2 {
-    color: #f9f9f9;
+.box h1, .box p {
+    line-height: 0.8; /* Adjust as needed */
 }
