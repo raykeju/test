@@ -148,9 +148,14 @@
                 window.location.href = event.target.href;
             }, 500);
         }
+    
         function fadeIn() {
-            document.body.style.opacity = '1';
+            requestAnimationFrame(() => {
+                document.body.style.opacity = '1';
+            });
         }
-    </script>
+    
+        window.addEventListener("load", fadeIn);
+    </script>    
 </body>
 </html>
